@@ -1,0 +1,3 @@
+Notre projet consiste à créer une simili "website application" de réseaux social dans laquelle les utilisateurs peuvent publier et intéragir avec différents contenus comme des liens, text, etc.
+
+Le projet est un projet de recherche dans lequel il faut identifier la meilleur manière de créer un frontend qui répond au demande des utilisateurs sans être en concurrence avec les autres réseaux sociaux. 
