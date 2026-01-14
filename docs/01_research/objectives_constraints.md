@@ -27,5 +27,4 @@
 
 	- Trop d’options peuvent créer de la confusion
 	- Certains modules pourraient être trop répétitifs
-	- Les utilisateurs pourraient être découragés par la complexité 
- 
+	- Les utilisateurs pourraient être découragés par la complexité

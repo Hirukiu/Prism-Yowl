@@ -24,5 +24,6 @@
 
 ## Pain points
 
+	- Ne veut pas de notification
 	- Frustrée par les notifications non désirées
 	- Hésite à utiliser des plateformes qui ne permettent pas de personnalisation
