@@ -1,3 +1,7 @@
-Notre projet consiste à créer une simili "website application" de réseaux social dans laquelle les utilisateurs peuvent publier et intéragir avec différents contenus comme des liens, text, etc.
+Les réseaux sociaux actuels manquent de flexibilité,
+et imposent des fonctionnalités non désirées,
+ce qui peut nuire à l’expérience utilisateur.
 
-Le projet est un projet de recherche dans lequel il faut identifier la meilleur manière de créer un frontend qui répond au demande des utilisateurs sans être en concurrence avec les autres réseaux sociaux. 
+Un réseau social personnalisable et modulaire
+permettrait aux utilisateurs de reprendrele contrôle
+de leur usage et de réduire les distractions.
