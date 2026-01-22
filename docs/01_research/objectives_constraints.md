@@ -2,13 +2,12 @@
 
 ## Objectifs
 
-	- Toutes fonctionnalités peuvent être activées ou désactivées par l’utilisateur
+	- Tous modules peuvent être activées ou désactivées par l’utilisateur
 	- Les utilisateurs peuvent modifier leurs paramètres en moins de 5 clics
-	- Le temps de chargement des pages est inférieur à 2 secondes
-	- 80 % des utilisateurs configurent au moins une fonctionnalité après inscription
-	- Temps de prise en main < 5 min
 	- Permettre à la communauté de créer, partager et installer des modules personnalisés
-
+	- Assurer la sécurité et la confidentialité des données des utilisateurs
+	- Favoriser l’engagement de la communauté à travers la création et l’amélioration de modules
+	
 ## Contraintes
 
 	- Chaque fonctionnalité doit fonctionner de manière indépendante

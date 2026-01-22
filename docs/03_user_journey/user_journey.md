@@ -2,15 +2,17 @@
 
 ## Usages etapes par etapes
 
-	1. Ouvre l'application
-	2. Crée un compte
-	3. Active/Désactives les modules
-	4. Active/Désactive les notification des modules
-	5. Consulte son fil d’actualité quotidiennement
-	6. Reçois seulement les notification activée
-	7. Interagit avec d'autres utilisateurs
-	8. Ajuste l'application selon ses préferences
-	9. Decouverte de nouveaux modules
+	1.  Ouvre l'application
+	2.  Crée un compte
+	3.  Active/Désactives les modules
+	4.  Active/Désactive les notification des modules
+	5.  Consulte son fil d’actualité quotidiennement
+	6.  Reçois seulement les notification activée
+	7.  Interagit avec d'autres utilisateurs
+	8.  Ajuste l'application selon ses préferences
+	9.  Decouverte de nouveaux modules
+	10. Création de modules personalisée
+	11. Partage de modules
 
 ## Points de friction
 
@@ -25,3 +27,4 @@
 	- Option “connexion rapide” avec Google
 	- Proposer des presets
 	- Permettre au utilisateurs de partager leurs préset facilement
+	- Crée un réseau social communautaire 
