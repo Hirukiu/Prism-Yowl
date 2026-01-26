@@ -1,24 +1,35 @@
-Méthode MoSCoW
+# Méthode MoSCoW
 
-Fonctionnalité:
-    M (Must Have):
-        - Création de compte / Connexion --> Sans compte on peut pas utilisé toutes les fonctions de l'app
+##	M (Must Have)
 
-        - Feed : contenu des gens --> Pour voir le contenu >
+	- Création de compte / Connexion
 
-        - Poster du texte/photo --> Il faut le contenu avan>
+	- Interface modulable
+	
+	- Magasin de modules
 
-        - Interface modulable   --> Base de notre site
+	- Profil utilisateur de base
 
-    S (Should have):
-        - Messagerie privée  --> Vital pour un réseau social
+##	S (Should have):
 
-    C (Could have):
-        - Systeme de like , de partage --> Tres utile pour les reseaux sociaux , mais on peut s'en passer pour le prototype
+	- Interface de création de modules pour les utilisateurs
+ 
+	- Partage des modules crées par les utilisateurs
 
-    W (Won't):
-        - Filtre vidéo (tiktok) --> Trop complexe pour le temps donné
+	- Messagerie privée
+		
+##	C (Could have):
 
+	- Modules non essenciel préfrabirqué
 
+	- Monétisation pour les Créateurs
 
+	- Thèmes Visuels
 
+##	W (Won't):
+
+    - Systeme de monétisation par publicité
+
+	- Interface trop remplie
+
+	- Algorithme de recommandation obligatoire
