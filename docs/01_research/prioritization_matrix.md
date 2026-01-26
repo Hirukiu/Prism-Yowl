@@ -19,5 +19,5 @@ Fonctionnalité:
         - Interface Modulable Avancée --> Laisser l'utilisateur bouger chaque pixel
 
     W (Won't): 
-        - Filtre vidéo (tiktok) --> Trop complexe
+        - Filtre vidéo (tiktok) --> Trop complexe pour le temps donné
 
