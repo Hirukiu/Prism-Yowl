@@ -1,1 +1,0 @@
-Contrairement aux plateformes classiques (comme X ou Facebook) qui imposent une interface unique. Prism est une plateforme ou on peut personnalisé notre interface selon notre volonté. Notre concept vous permet de construire votre propre expérience sociale. Avec a disposition des modules d'utilisateurs qu'on peut télécharger et partager a la communeauté.
