@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS Prism;
+USE Prism;
+
+CREATE TABLE user (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    name VARCHAR(100) NOT NULL,
+    firstname VARCHAR(100) NOT NULL,
+    created_at DATETIME DEFAULT now(),
+	profile_picture VARCHAR(255) DEFAULT NULL
+);
