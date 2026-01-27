@@ -6,6 +6,10 @@ body {
     color: white;
     overflow: hidden; 
 }
+a {
+    color: inherit;
+    text-decoration: none;
+}
 
 .layout-principal {
     display: flex; 
@@ -92,7 +96,7 @@ body {
     cursor: pointer;
 }
 
-.contenu-bloc {
+.content-block {
     flex-grow: 1;
     overflow-y: auto; 
     padding: 20px;

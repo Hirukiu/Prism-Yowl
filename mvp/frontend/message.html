@@ -1,20 +1,50 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="message.css">
     <title>Message</title>
+    <link rel="stylesheet" href="./message.css">
 </head>
-<body>
-    <header></header>
-    <section class="contacts">
-        <div class="add_contact">
-            <button>Add contact</button>
+
+<body class="layout-principal">
+    <div class="colone-left">
+        <div class="logo">Prism</div>
+
+        <ul class="menu">
+            <li>Messages</li>
+            <li>Reel</li>
+            <li>Forum</li>
+            <li>Trading</li>
+            <li>Shopping</li>
+        </ul>
+    </div>
+
+    <div class="contenu-principal">
+
+        <div class="top-bar">
+            <h2>Message</h2>
+            <div class="icones">
+                <span>🔔</span> <span>⚙️</span> <span>👤</span>
+            </div>
         </div>
-        <div>
+
+        <main class="content-block">
             
-        </div>
-    </section>
+        </main>
+
+    </div>
+
+    <script>
+        const boutons = document.querySelectorAll('.menu li');
+        boutons.forEach(function (bouton) {
+            bouton.addEventListener('click', function () {
+                boutons.forEach(b => b.classList.remove('active'));
+                bouton.classList.add('active');
+            });
+        });
+    </script>
 </body>
+
 </html>
