@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Prism</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./layout.css">
+</head>
+
+<body class="layout-principal">
+    
+    <div class="colone-left">
+        <div class="logo-container">
+            <div class="logo-icon"></div>
+            <div class="logo-text">Prism</div>
+        </div>
+
+        <ul class="menu">
+            <li><i class="fas fa-comments"></i> Messages</li>
+            <li><i class="fas fa-play-circle"></i> Reel</li>
+            <li><i class="fas fa-users"></i> Forum</li>
+            <li><i class="fas fa-chart-line"></i> Trading</li>
+            <li><i class="fas fa-shopping-bag"></i> Shopping</li>
+            <li><i class="fas fa-play"></i> Video</li>
+        </ul>
+
+        <div class="add-modules">
+            <i class="fas fa-plus-square"></i> Add modules
+        </div>
+    </div>
+
+    <div class="contenu-principal">
+
+        <div class="top-bar">
+            <h2>Profile</h2> <div class="icones">
+                <i class="far fa-user-circle"></i>
+                <i class="fas fa-cog"></i>
+                <div class="notification-icon">
+                    <i class="fas fa-bell"></i>
+                    <span class="badge">5</span>
+                </div>
+            </div>
+        </div>
+
+        <main class="content-block">
+            
+            <div class="profile-header">
+                <div class="profile-left">
+                    <div class="avatar-circle"></div>
+                    <button class="btn-edit">EDIT</button>
+                </div>
+
+                <div class="profile-right">
+                    <div class="username-pill">Username</div>
+                    
+                    <div class="stats-box">
+                        <span>2 publication</span>
+                        <span>100 followers</span>
+                        <span>154 suivi(e)s</span>
+                    </div>
+
+                    <div class="camera-icon-container">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="photo-card">
+                    <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Paysage">
+                </div>
+                <div class="photo-card">
+                    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Amis">
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+
+    <script>
+        const boutons = document.querySelectorAll('.menu li');
+        boutons.forEach(function (bouton) {
+            bouton.addEventListener('click', function () {
+                boutons.forEach(b => b.classList.remove('active'));
+                bouton.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
