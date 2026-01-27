@@ -44,7 +44,7 @@ body {
     margin-bottom: 5px;
     cursor: pointer;
     color: #b0b0b0;
-    transition: background 0.3s;
+    transition: background-color 0.3s;
 }
 
 .menu li:hover {
