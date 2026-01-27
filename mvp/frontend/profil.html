@@ -3,26 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile - Prism</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="./layout.css">
+    <title>Prism Profil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./profil.css">
 </head>
+<body>
 
-<body class="layout-principal">
-    
-    <div class="colone-left">
-        <div class="logo-container">
-            <div class="logo-icon"></div>
-            <div class="logo-text">Prism</div>
+    <div class="sidebar">
+        <div class="logo">
+            <div><img src="./img/prsime.webp" width="28px" alt=""></div>
+            Prism
         </div>
 
-        <ul class="menu">
-            <li><i class="fas fa-comments"></i> Messages</li>
-            <li><i class="fas fa-play-circle"></i> Reel</li>
-            <li><i class="fas fa-users"></i> Forum</li>
-            <li><i class="fas fa-chart-line"></i> Trading</li>
-            <li><i class="fas fa-shopping-bag"></i> Shopping</li>
-            <li><i class="fas fa-play"></i> Video</li>
+        <ul class="nav-links">
+            <li><a href="#"><i class="fa-regular fa-message"></i> Message</a></li>
+            <li><a href="#"><i class="fas fa-play-circle"></i> Reel</a></li>
+            <li><a href="#"><i class="fas fa-users"></i> Forum</a></li>
+            <li><a href="#"><i class="fas fa-chart-line"></i> Trading</a></li>
+            <li><a href="#"><i class="fas fa-shopping-bag"></i> Shopping</a></li>
+            <li><a href="#"><i class="fa-solid fa-play"></i> Video</a></li>
         </ul>
 
         <div class="add-modules">
@@ -30,63 +29,54 @@
         </div>
     </div>
 
-    <div class="contenu-principal">
-
-        <div class="top-bar">
-            <h2>Profile</h2> <div class="icones">
-                <i class="far fa-user-circle"></i>
-                <i class="fas fa-cog"></i>
-                <div class="notification-icon">
+    <div class="main-content">
+        
+        <header>
+            <h1>Profil</h1>
+            <div class="header-icons">
+                <div class="icon-btn"><i class="far fa-user-circle"></i></div>
+                <div class="icon-btn"><i class="fas fa-cog"></i></div>
+                <div class="icon-btn">
                     <i class="fas fa-bell"></i>
-                    <span class="badge">5</span>
+                    <div class="badge">5</div>
+                </div>
+            </div>
+        </header>
+
+        <div class="profil-section">
+            <div class="profil-container">
+                <div class="profil"></div>
+                <button class="btn-edit">EDIT</button>
+            </div>
+
+            <div class="profil-details">
+                <div class="profil-text">
+                    <div class="username-u">Username</div>
+                    <div class="stats-box">
+                        <span><strong>2</strong> publication</span>
+                        <span><strong>100</strong> followers</span>
+                        <span><strong>154</strong> suivi(e)s</span>
+                    </div>
+                </div>
+                
+                <div class="camera-wrapper">
+                    <i class="fas fa-camera camera-icon"></i>
                 </div>
             </div>
         </div>
 
-        <main class="content-block">
-            
-            <div class="profile-header">
-                <div class="profile-left">
-                    <div class="avatar-circle"></div>
-                    <button class="btn-edit">EDIT</button>
+        <div class="gallery-section">
+            <div class="photo-grid">
+                <div class="photo-galery">
+                    <img src="/img/vac.jpg">
                 </div>
-
-                <div class="profile-right">
-                    <div class="username-pill">Username</div>
-                    
-                    <div class="stats-box">
-                        <span>2 publication</span>
-                        <span>100 followers</span>
-                        <span>154 suivi(e)s</span>
-                    </div>
-
-                    <div class="camera-icon-container">
-                        <i class="fas fa-camera"></i>
-                    </div>
+                <div class="photo-galery">
+                    <img src="/img/vac2.jpg">
                 </div>
             </div>
-
-            <div class="gallery-grid">
-                <div class="photo-card">
-                    <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Paysage">
-                </div>
-                <div class="photo-card">
-                    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Amis">
-                </div>
-            </div>
-
-        </main>
+        </div>
 
     </div>
 
-    <script>
-        const boutons = document.querySelectorAll('.menu li');
-        boutons.forEach(function (bouton) {
-            bouton.addEventListener('click', function () {
-                boutons.forEach(b => b.classList.remove('active'));
-                bouton.classList.add('active');
-            });
-        });
-    </script>
 </body>
 </html>
