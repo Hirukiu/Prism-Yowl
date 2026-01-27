@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>parametre</title>
+    <title>Paramètres</title>
     <link rel="stylesheet" href="./parametre.css">
 </head>
 
 <body>
-    <div class="container">
+
+    <div class="layout-principal">
+
         <div class="colone-left">
             <div class="logo">Prism</div>
 
@@ -20,33 +22,34 @@
                 <li>Trading</li>
                 <li>Shopping</li>
             </ul>
-            <div class="colone-mid">
+        </div>
 
+        <div class="contenu-principal">
+
+            <div class="top-bar">
+                <h2>Paramètres</h2>
+                <div class="icones">
+                    <span>🔔</span> <span>⚙️</span> <span>👤</span>
+                </div>
             </div>
 
             <div class="contenu-bloc">
-               
+
             </div>
-        </div>
-
-        <div class="top-bar">
-             <h2>Paramètres</h2>
-                <div class="icones">
-                    <span>👤</span> <span>⚙️</span> <span>🔔</span>
-                </div>
 
         </div>
-        <script>
-            const boutons = document.querySelectorAll('.menu li');
-            boutons.forEach(function (bouton) {
-                bouton.addEventListener('click', function () {
-                    boutons.forEach(function (b) {
-                        b.classList.remove('active')
-                    });
-                    bouton.classList.add('active');
-                });
+
+    </div>
+
+    <script>
+        const boutons = document.querySelectorAll('.menu li');
+        boutons.forEach(function (bouton) {
+            bouton.addEventListener('click', function () {
+                boutons.forEach(b => b.classList.remove('active'));
+                bouton.classList.add('active');
             });
-        </script>
+        });
+    </script>
 </body>
 
 </html>
