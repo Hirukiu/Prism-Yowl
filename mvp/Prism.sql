@@ -10,3 +10,9 @@ CREATE TABLE user (
     created_at DATETIME DEFAULT now(),
 	profile_picture VARCHAR(255) DEFAULT NULL
 );
+
+CREATE TABLE module (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+	module_name CHAR(255),
+	
+)
