@@ -4,7 +4,7 @@ const auth = express.Router();
 
 // Importation des deux autres fichiers
 const queries = require('./userQueries');
-const utils = require('./authUtils');
+const utils = require('./authUtilis');
 
 // --- Route Register ---
 auth.post('/register', async (req, res, next) => {
