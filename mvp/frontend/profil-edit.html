@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prism Profil-edit</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./profil-edit.css">
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <div class="logo">
+            <div><img src="./img/prsime.webp" width="28px" alt=""></div>
+            Prism
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#"><i class="fa-regular fa-message"></i> Message</a></li>
+            <li><a href="#"><i class="fas fa-play-circle"></i> Reel</a></li>
+            <li><a href="#"><i class="fas fa-users"></i> Forum</a></li>
+            <li><a href="#"><i class="fas fa-chart-line"></i> Trading</a></li>
+            <li><a href="#"><i class="fas fa-shopping-bag"></i> Shopping</a></li>
+            <li><a href="#"><i class="fa-solid fa-play"></i> Video</a></li>
+        </ul>
+
+        <div class="add-modules">
+            <i class="fas fa-plus-square"></i> Add modules
+        </div>
+    </div>
+
+    <div class="main-content">
+
+        <header>
+            <h1>Profil</h1>
+            <div class="header-icons">
+                <div class="icon-btn"><i class="far fa-user-circle"></i></div>
+                <div class="icon-btn"><i class="fas fa-cog"></i></div>
+                <div class="icon-btn">
+                    <i class="fas fa-bell"></i>
+                    <div class="badge">5</div>
+                </div>
+            </div>
+        </header>
+
+        <div class="profile-layout">
+
+            <div class="left-column">
+                <div class="avatar-circle"></div>
+
+                <button class="btn-edit">EDIT</button>
+
+               
+            </div>
+
+            <div class="right-column">
+
+                <div class="user-header">
+                    <h2>Username</h2>
+                    <p class="user-gras">@username</p>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <i class="far fa-envelope"></i>
+                        <span>Email: username.gmail.com</span>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-chart-pie"></i> <span>followers: 150.2M</span>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Paris</span>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-user-friends"></i>
+                        <span>following: 120</span>
+                    </div>
+                </div>
+
+                <div class="description-section">
+                    <h3>Bio</h3>
+                        <textarea class="description" placeholder="Ajouter du texte"></textarea>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
