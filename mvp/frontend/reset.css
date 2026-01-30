@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #1a1a1a; 
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.auth-container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.auth-card {
+    background-color: #2d2d2d; 
+    width: 100%;
+    max-width: 450px; 
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid #3d3d3d;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
+}
+
+.auth-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.auth-logo img {
+    display: block;
+}
+
+.auth-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.auth-desc {
+    color: #aaa;
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group i {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 16px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px 15px 15px 50px; 
+    background-color: #1a1a1a;
+    border: 1px solid #3d3d3d;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #6c5ce7; 
+    box-shadow: 0 0 0 2px rgba(108, 92, 231, 0.2);
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 15px;
+    background-color:#8A2BE2; 
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #b303ff;
+}
+.auth-footer {
+    margin-top: 30px;
+}
+
+.auth-footer a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 14px;
+    transition: 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.auth-footer a:hover {
+    color: white;
+}
