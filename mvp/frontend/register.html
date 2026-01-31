@@ -9,7 +9,7 @@
     <header><h1>Register</h1></header>
 <body>
     <div class="container-form">
-        <form>
+        <form id="register-form">
             <input type="text" id="username" placeholder="Username" required>
             <br>
             <input type="email" id="email" placeholder="Email address" required>
@@ -27,7 +27,7 @@
     </div>
     
     <script>
-        document.querySelector('#container-form').addEventListener('login-btn', async (e) => {
+        document.querySelector('#register-form').addEventListener('login-btn', async (e) => {
             e.preventDefault();
 
             const username = document.querySelector('#username').value;
