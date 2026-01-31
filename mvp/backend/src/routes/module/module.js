@@ -95,3 +95,5 @@ module.get('/desactivate', async (req, res, next) => {
         next(err);
     }
 });
+
+module.exports = module;
