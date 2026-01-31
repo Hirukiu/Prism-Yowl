@@ -31,6 +31,9 @@ form input {
     margin-bottom: 20px;
 }
 
+
+
+
 form input::placeholder {
     color: gray;
     padding: 10px;
