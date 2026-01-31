@@ -10,6 +10,16 @@ async function activateModule(db, moduleId) {
     await db.execute('UPDATE modules SET active = 1 WHERE id = ?', [moduleId]);
 }
 
-async function activateModule(db, moduleId) {
+async function desactivateModule(db, moduleId) {
     await db.execute('UPDATE modules SET active = 0 WHERE id = ?', [moduleId]);
+}
+
+async function getAllActivated(db) {
+    const [rows] = await db.query('SELECT id, module_name as name FROM modules WHERE active = 1');
+    return rows;
+}
+
+async function getAllDesactivated(db) {
+	const [rows] = await db.query('SELECT id, module_name as name FROM modules WHERE active = 0');
+	return rows;
 }

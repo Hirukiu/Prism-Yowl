@@ -15,7 +15,7 @@ module.put('/activate', async (req, res, next) => {
 			throw error;
 		}
 
-		moduleId = await queries.getModuleId(module_name);
+		moduleId = await queries.getModuleId(db ,module_name);
 
 		if (!moduleId){
 			const error = new Error('Missing parameters');
@@ -23,7 +23,7 @@ module.put('/activate', async (req, res, next) => {
 			throw error;
 		}
 
-		if (await queries.activateModule(moduleId))
+		if (await queries.activateModule(db, moduleId))
 		{
 			res.status(200);
 		}
@@ -36,7 +36,7 @@ module.put('/activate', async (req, res, next) => {
 	}
 })
 
-module.put('/disactivate', async (req, res, next) => {
+module.put('/desactivate', async (req, res, next) => {
 	console.log("/module/activate endpoint reached");
 	try{
 		const db = req.app.locals.db;
@@ -48,7 +48,7 @@ module.put('/disactivate', async (req, res, next) => {
 			throw error;
 		}
 
-		moduleId = await queries.getModuleId(module_name);
+		moduleId = await queries.getModuleId(db, module_name);
 
 		if (!moduleId){
 			const error = new Error('Missing parameters');
@@ -56,7 +56,7 @@ module.put('/disactivate', async (req, res, next) => {
 			throw error;
 		}
 
-		if (await queries.desactivateModule(moduleId))
+		if (await queries.desactivateModule(db, moduleId))
 		{
 			res.status(200);
 		}
@@ -68,3 +68,30 @@ module.put('/disactivate', async (req, res, next) => {
 		next(err);
 	}
 })
+
+module.get('/activate', async (req, res, next) => {
+    console.log("/module/activate endpoint reached");
+    try {
+        const db = req.app.locals.db;
+        const activeModules = await getAllActivated(db); 
+		
+        res.status(200).json(activeModules);
+
+    } catch (err) {
+        next(err);
+    }
+});
+
+module.get('/desactivate', async (req, res, next) => {
+    console.log("/module/desactivate endpoint reached");
+    try {
+        const db = req.app.locals.db;
+
+        const inactiveModules = await getAllDesactivated(db);
+
+        res.status(200).json(inactiveModules);
+
+    } catch (err) {
+        next(err);
+    }
+});
