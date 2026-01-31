@@ -21,13 +21,13 @@
            
             <br>
 
-            <button class="login-btn">Sign up</button>
+            <button type="submit" class="login-btn">Sign up</button>
             <p class="p"> Already have an account? <a href="./login.html" class="sign-a">Login</a></p>
         </form>
     </div>
     
     <script>
-        document.querySelector('#register-form').addEventListener('login-btn', async (e) => {
+        document.querySelector('#register-form').addEventListener('submit', async (e) => {
             e.preventDefault();
 
             const username = document.querySelector('#username').value;
