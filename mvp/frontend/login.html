@@ -14,16 +14,40 @@
 <body>
     <div class="container-form">
         <form>
-            <input type="text" placeholder="username">
+            <input type="email" placeholder="Email">
             <br>
-            <input type="text" placeholder="password">
+            <input type="password" placeholder="Password">
             <br>
-            <a href="./reset.html" class="forgot">forgot password</a><br>
+            <a href="./reset.html" class="forgot">Forgot password</a><br>
 
             <button class="login-btn">Login</button>
             <p class="p"> Dont have account ? <a href="./register.html" class="sign-a">Sign up</a></p>
         </form>
     </div>
+    <script>
+        document.querySelector('#container-form').addEventListener('login-btn', async (e) => {
+            e.preventDefault();
+
+            const email = document.querySelector('#email').value;
+            const password = document.querySelector('#password').value; 
+
+            const res = await fetch("https://localhost:8080/login", {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json'},
+                body: JSON.stringify({email, password})
+            });
+
+            const data = await res.json();
+            console.log(data)
+            if (res.ok) {
+                alert('Login successful');
+                localStorage.setItem('token', data.token);
+                window.location.href = 'parametre.html';
+            } else {
+                alert(data.msg);
+            }
+        });
+    </script>
 
 </body>
 
