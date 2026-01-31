@@ -1,9 +1,9 @@
 const express = require('express');
-const module = express.Router();
+const modules = express.Router();
 
 const queries = require('./moduleQueries');
 
-module.put('/activate', async (req, res, next) => {
+modules.put('/activate', async (req, res, next) => {
 	console.log("/module/activate endpoint reached");
 	try{
 		const db = req.app.locals.db;
@@ -36,7 +36,7 @@ module.put('/activate', async (req, res, next) => {
 	}
 })
 
-module.put('/desactivate', async (req, res, next) => {
+modules.put('/desactivate', async (req, res, next) => {
 	console.log("/module/activate endpoint reached");
 	try{
 		const db = req.app.locals.db;
@@ -69,7 +69,7 @@ module.put('/desactivate', async (req, res, next) => {
 	}
 })
 
-module.get('/activate', async (req, res, next) => {
+modules.get('/activate', async (req, res, next) => {
     console.log("/module/activate endpoint reached");
     try {
         const db = req.app.locals.db;
@@ -82,7 +82,7 @@ module.get('/activate', async (req, res, next) => {
     }
 });
 
-module.get('/desactivate', async (req, res, next) => {
+modules.get('/desactivate', async (req, res, next) => {
     console.log("/module/desactivate endpoint reached");
     try {
         const db = req.app.locals.db;
@@ -96,4 +96,4 @@ module.get('/desactivate', async (req, res, next) => {
     }
 });
 
-module.exports = module;
+module.exports = modules;
