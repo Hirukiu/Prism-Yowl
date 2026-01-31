@@ -11,8 +11,15 @@ CREATE TABLE user (
 	profile_picture VARCHAR(255) DEFAULT NULL
 );
 
+<<<<<<< HEAD
 CREATE TABLE module (
     id INT AUTO_INCREMENT PRIMARY KEY,
 	module_name CHAR(255),
 	
+=======
+CREATE TABLE modules (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	module_name VARCHAR(255) NOT NULL,
+	active BOOLEAN NOT NULL
+>>>>>>> mathieu
 )
