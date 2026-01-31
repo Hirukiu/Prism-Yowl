@@ -1,0 +1,52 @@
+services:
+  backend:
+    build: ./backend
+    container_name: Prism-backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend:/usr/src/app
+    depends_on:
+      - db
+    networks:
+      - Prism-network
+    environment:
+      - PORT=${PORT}
+      - SECRET=${SECRET}
+      - MYSQL_HOST=${MYSQL_HOST}
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+  frontend:
+    build: ./frontend
+    container_name: Prism-frontend
+    ports:
+      - "8080:80"
+    volumes:
+      - ./frontend:/usr/local/apache2/htdocs/
+    networks:
+      - Prism-network
+    depends_on:
+      - backend
+
+  db:
+    image: mysql:8
+    container_name: Prism-db
+    ports:
+      - "5433:5432"
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./Prism.sql:/docker-entrypoint-initdb.d/Prism.sql
+    networks:
+      - Prism-network
+  
+volumes:
+  mysql-data:
+
+networks:
+  Prism-network:
