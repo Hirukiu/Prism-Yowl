@@ -11,9 +11,8 @@ auth.post('/register', async (req, res, next) => {
     const { email, username, password, confirmation_password } = req.body;
 
     if (!email || !username || !password || !confirmation_password || password != confpassword) {
-      const error = new Error('Missing parameters');
-      error.name = 'BadRequestError';
-      throw error;
+
+      
     }
 	
     const userAlreadyExists = await queries.emailExists(db, email);
