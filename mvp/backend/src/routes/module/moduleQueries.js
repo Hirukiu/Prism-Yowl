@@ -23,3 +23,12 @@ async function getAllDesactivated(db) {
 	const [rows] = await db.query('SELECT id, module_name as name FROM modules WHERE active = 0');
 	return rows;
 }
+
+module.exports = {
+
+	getModuleId,
+	activateModule,
+	desactivateModule,
+	getAllActivated,
+	getAllDesactivated
+};
