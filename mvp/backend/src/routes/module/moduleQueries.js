@@ -25,9 +25,10 @@ async function getAllDesactivated(db) {
 }
 
 module.exports = {
-  getModuleId,
-  activateModule,
-  desactivateModule,
-  getAllActivated,
-  getAllDesactivated
+
+	getModuleId,
+	activateModule,
+	desactivateModule,
+	getAllActivated,
+	getAllDesactivated
 };

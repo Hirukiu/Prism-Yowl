@@ -73,7 +73,7 @@ modules.get('/activate', async (req, res, next) => {
     console.log("/module/activate endpoint reached");
     try {
         const db = req.app.locals.db;
-        const activeModules = await getAllActivated(db); 
+        const activeModules = await queries.getAllActivated(db); 
 		
         res.status(200).json(activeModules);
 
@@ -87,7 +87,7 @@ modules.get('/desactivate', async (req, res, next) => {
     try {
         const db = req.app.locals.db;
 
-        const inactiveModules = await getAllDesactivated(db);
+        const inactiveModules = await queries.getAllDesactivated(db);
 
         res.status(200).json(inactiveModules);
 

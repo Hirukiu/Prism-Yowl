@@ -7,24 +7,57 @@
     <link rel="stylesheet" href="./Connection.css">
     <title>Login</title>
 </head>
+
 <header>
     <h1>Login</h1>
 </header>
 
 <body>
     <div class="container-form">
-        <form>
-            <input type="text" placeholder="username">
+        <form id="login-form">
+            <input type="email" id="email" placeholder="Email" required>
             <br>
-            <input type="text" placeholder="password">
+            <input type="password" id="password" placeholder="Password" required>
             <br>
-            <a href="./reset.html" class="forgot">forgot password</a><br>
 
-            <button class="login-btn">Login</button>
-            <p class="p"> Dont have account ? <a href="./register.html" class="sign-a">Sign up</a></p>
+            <a href="./reset.html" class="forgot">Forgot password</a><br>
+
+            <button type="submit" class="login-btn">Login</button>
+            <p class="p"> Don’t have an account ?
+                <a href="./register.html" class="sign-a">Sign up</a>
+            </p>
         </form>
     </div>
 
-</body>
+    <script>
+        const API_URL = "http://localhost:5000";
 
+        document.querySelector('#login-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const email = document.querySelector('#email').value;
+            const password = document.querySelector('#password').value;
+
+            try {
+                const res = await fetch(`${API_URL}/login`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email, password })
+                });
+
+                const data = await res.json();
+
+                if (res.ok) {
+                    localStorage.setItem('token', data.token);
+                    window.location.href = 'parametre.html';
+                } else {
+                    alert(data.msg || "Login failed");
+                }
+            } catch (err) {
+                alert("Server unreachable");
+            }
+        });
+    </script>
+
+</body>
 </html>

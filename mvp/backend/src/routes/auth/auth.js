@@ -10,7 +10,7 @@ auth.post('/register', async (req, res, next) => {
     const db = req.app.locals.db;
     const { email, username, password, confirmation_password } = req.body;
 
-    if (!email || !username || !password || !confirmation_password || password != confpassword) {
+    if (!email || !username || !password || !confirmation_password || password != confirmation_password) {
 
       
     }

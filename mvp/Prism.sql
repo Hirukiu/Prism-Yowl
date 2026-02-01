@@ -5,21 +5,13 @@ CREATE TABLE user (
     id INT AUTO_INCREMENT PRIMARY KEY,
     email VARCHAR(255) NOT NULL UNIQUE,
     password VARCHAR(255) NOT NULL,
-    name VARCHAR(100) NOT NULL,
-    firstname VARCHAR(100) NOT NULL,
-    created_at DATETIME DEFAULT now(),
-	profile_picture VARCHAR(255) DEFAULT NULL
+    username VARCHAR(100) NOT NULL,
+    created_at DATETIME DEFAULT NOW(),
+    profile_picture VARCHAR(255) DEFAULT NULL
 );
 
-<<<<<<< HEAD
-CREATE TABLE module (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-	module_name CHAR(255),
-	
-=======
 CREATE TABLE modules (
-	id INT AUTO_INCREMENT PRIMARY KEY,
-	module_name VARCHAR(255) NOT NULL,
-	active BOOLEAN NOT NULL
->>>>>>> mathieu
-)
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    module_name VARCHAR(255) NOT NULL,
+    active BOOLEAN NOT NULL
+);
