@@ -14,14 +14,6 @@ app.use(express.json());
 
 const { connectDB } = require('./config/db');
 
-<<<<<<< HEAD
-app.use("/", authRoutes);
-app.use("/module", moduleRoutes);
-
-app.listen(process.env.PORT || 5000, () => {
-  console.log(`API Server listening on port ${process.env.PORT || 5000}`);
-});
-=======
 connectDB().then(db => {
   
 	app.locals.db = db;
@@ -41,4 +33,3 @@ connectDB().then(db => {
 	process.exit(1);
 
 }); 
->>>>>>> Leon

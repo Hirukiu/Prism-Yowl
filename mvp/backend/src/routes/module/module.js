@@ -96,8 +96,4 @@ modules.get('/desactivate', async (req, res, next) => {
     }
 });
 
-<<<<<<< HEAD
-module.exports = module;
-=======
 module.exports = modules;
->>>>>>> Leon
