@@ -1,3 +1,4 @@
+
 // userQueries.js
 
 // Vérifie si un email existe déjà (renvoie true/false)
@@ -14,7 +15,7 @@ async function getUserByEmail(db, email) {
 }
 
 // Crée un utilisateur
-async function createUser(db, email, name, firstname, password) {
+async function createUser(db, email, username, password) {
   const [result] = await db.query(
     'INSERT INTO user (email, name, firstname, password) VALUES (?, ?, ?, ?)',
     [email, name, firstname, password]
